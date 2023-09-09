@@ -10,7 +10,13 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardComponent },
       { path: 'dashboard', component: DashboardComponent },
-
+      {
+        path: 'maid',
+        loadChildren: () =>
+          import('src/app/modules/maid/maid.module').then(
+            (m) => m.MaidModule
+          ),
+      },
       // { path: 'meetingroom', loadChildren: '../../page/meeting-room/meeting-room.module#MeetingRoomModule'}
     ]
   },
