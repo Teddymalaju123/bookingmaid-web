@@ -3,8 +3,18 @@ body {
     background: #cccccc;
 }
 
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
 @import "assets/font/fonts.css";
+@import "~ng-zorro-antd/ng-zorro-antd.less";
+@import "~ng-zorro-antd/style/index.min.css";
+/* Import base styles */
+@import "~ng-zorro-antd/button/style/index.min.css";
+@import "~ng-zorro-antd/style/entry.less";
+/* Import base styles */
+@import "~ng-zorro-antd/button/style/entry.less";
 
+/* Import one component's styles */
+/* Import one component's styles */
 p {
     font-size: 14px;
 }
