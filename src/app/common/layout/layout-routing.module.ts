@@ -17,6 +17,13 @@ const routes: Routes = [
             (m) => m.MaidModule
           ),
       },
+      {
+        path: 'user',
+        loadChildren: () =>
+          import('src/app/modules/user-management/user-management.module').then(
+            (m) => m.UserManagementModule
+          ),
+      },
       // { path: 'meetingroom', loadChildren: '../../page/meeting-room/meeting-room.module#MeetingRoomModule'}
     ]
   },
