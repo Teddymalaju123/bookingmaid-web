@@ -8,7 +8,7 @@ declare var $: any;
 })
 
 export class LayoutComponent implements OnInit {
-
+  imageUrl = './assets/images/logo/ThePrivacy.png';
   constructor(
     private router: Router,
 
